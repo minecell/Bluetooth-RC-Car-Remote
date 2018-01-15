@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ABU-VaRcRemote.iml" filepath="$PROJECT_DIR$/ABU-VaRcRemote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bluetooth-RC-Car-Remote.iml" filepath="$PROJECT_DIR$/Bluetooth-RC-Car-Remote.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
