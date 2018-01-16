@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="ch.weilbaum.abu_varcremote.MainActivity">
+    tools:context="ch.weilbaum.bluetooth_rc_car_remote.MainActivity">
     <!-- Speed -->
     <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
         android:id="@+id/speedWrapper"

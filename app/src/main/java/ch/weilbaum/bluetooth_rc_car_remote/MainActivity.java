@@ -1,16 +1,15 @@
-package ch.weilbaum.abu_varcremote;
+package ch.weilbaum.bluetooth_rc_car_remote;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
 public class MainActivity extends AppCompatActivity {
     private SeekBar speed;
     private SeekBar steering;
-    private Bluetooth bt;
+    // private Bluetooth bt;
     private Button button;
 
     @Override
@@ -57,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
             public void onStartTrackingTouch(SeekBar seekBar) {}
         });
 
+        /*
         button.setOnClickListener((View v) -> {
             try {
                 bt.getListOfPairedDevices();
@@ -64,5 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("BT", e.toString());
             }
         });
+        */
     }
 }
