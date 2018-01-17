@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BluetoothRCCarRemote.iml" filepath="$PROJECT_DIR$/BluetoothRCCarRemote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bluetooth-RC-Car-Remote.iml" filepath="$PROJECT_DIR$/Bluetooth-RC-Car-Remote.iml" />
+      <module fileurl="file://C:\Data\Clone\Bluetooth-RC-Car-Remote\BluetoothRCCarRemote.iml" filepath="C:\Data\Clone\Bluetooth-RC-Car-Remote\BluetoothRCCarRemote.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Data\Clone\Bluetooth-RC-Car-Remote\app\app.iml" filepath="C:\Data\Clone\Bluetooth-RC-Car-Remote\app\app.iml" />
     </modules>
   </component>
 </project>

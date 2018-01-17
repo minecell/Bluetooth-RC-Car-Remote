@@ -63,7 +63,9 @@ public class MainActivity1 extends AppCompatActivity {
         speed.setProgress(30);
 
         steering = (SeekBar) findViewById(R.id.steering);
-        steering.setProgress(50);
+        steering.setMax(2);
+        steering.setProgress(1);
+
 
         speed.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -92,7 +94,7 @@ public class MainActivity1 extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                seekBar.setProgress(50);
+                seekBar.setProgress(1);
             }
 
             @Override
@@ -239,8 +241,10 @@ public class MainActivity1 extends AppCompatActivity {
         try {
             outStream.write(msgBuffer);
         } catch (IOException e) {
+            Log.e("BT", "Send failed: ");
+            e.printStackTrace();
             String msg = "In onResume() and an exception occurred during write: " + e.getMessage();
-            errorExit("Fatal Error", msg);
+            // errorExit("Fatal Error", msg);
         }
     }
 
