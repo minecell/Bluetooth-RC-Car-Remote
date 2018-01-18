@@ -59,8 +59,8 @@ public class MainActivity1 extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.button);
         speed = (SeekBar) findViewById(R.id.speed);
-        speed.setMax(130);
-        speed.setProgress(30);
+        speed.setMax(255);
+        speed.setProgress(0);
 
         steering = (SeekBar) findViewById(R.id.steering);
         steering.setMax(2);
@@ -70,13 +70,18 @@ public class MainActivity1 extends AppCompatActivity {
         speed.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                sendData("m" + Integer.toString(seekBar.getProgress()) + "#");
-                Log.d("SPEED", Integer.toString(seekBar.getProgress()));
+                /*
+                if (i < 70){
+                    i = 70;
+                }
+                */
+                sendData("m" + Integer.toString(i) + "#");
+                Log.d("SPEED", Integer.toString(i));
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                seekBar.setProgress(30);
+                seekBar.setProgress(0);
             }
 
             @Override
