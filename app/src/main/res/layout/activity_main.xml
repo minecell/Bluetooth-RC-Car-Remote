@@ -10,16 +10,18 @@
         android:id="@+id/speedWrapper"
         android:layout_width="60dp"
         android:layout_height="match_parent"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="50dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="0dp"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="40dp">
 
         <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
             android:id="@+id/speed"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:progressDrawable="@drawable/seekbar_progress"
             android:splitTrack="false"
+            android:thumb="@drawable/thumb_image"
             app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
     </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
 
@@ -32,16 +34,6 @@
         android:baselineAligned="false"
         android:orientation="horizontal">
 
-        <SeekBar
-            android:id="@+id/steering"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="45dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginRight="20dp" />
-
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
@@ -50,6 +42,18 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="20dp"
             android:text="Do" />
+
+        <SeekBar
+            android:id="@+id/steering"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginRight="30dp"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:thumb="@drawable/thumb_image" />
 
     </RelativeLayout>
 </RelativeLayout>
