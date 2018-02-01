@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
         button.setOnClickListener((View v) -> {
             try {
-                sendData("b90#");
+                sendData("l1#");
             } catch (Exception e) {
                 Log.e("BT", e.toString());
             }
